@@ -6,11 +6,9 @@ const { image, demo, source } = Astro.props
 <div class="max-w-lg bg-white border border-gray-200 rounded-lg shadow-lg">
     { image && <img class="rounded-t-lg object-fill w-full" src={image} alt="" />}
     <div class="p-5">
-        <a href="#">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              <slot name="header"/>
-            </h5>
-        </a>
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <slot name="header"/>
+        </h5>
         <div class="mb-3 font-normal text-gray-700">
           <slot />
         </div>
