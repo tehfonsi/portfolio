@@ -1,0 +1,54 @@
+---
+// Component Imports
+import Me from '../components/Me.astro';
+import Project from '../components/Project.astro';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='icon' href='/favicon.ico' />
+    <meta name='generator' content={Astro.generator} />
+    <title>Stephan Schober</title>
+  </head>
+
+  <body class="p-4">
+    <div class="flex flex-wrap flex-row gap-8">
+			<Me />
+
+			<Project demo="https://tehfonsi.com/" source="https://github.com/tehfonsi/portfolio">
+				<p slot="header">Portfolio Website</p>
+				Wanted to create an overview of all the project I've done over the years. Also wanted to build a site with Astro 😅
+				<p slot="technologies">Astro, Cloudflare, Vercel</p>
+			</Project>
+
+      <Project demo="https://aipoemgenerator.com/">
+				<p slot="header">AI Poem Generator</p>
+				Generate poems using Open AIs chatGPT 🤖. Focus was on building something with Open AIs API and marketing a simple product.
+				<p slot="technologies">Nuxt3, Docker, Open AI, MongoDB Atlas, Stripe, Cloudflare</p>
+			</Project>
+
+			<Project demo="https://www.npmjs.com/package/taxler" source="https://github.com/tehfonsi/taxler">
+				<p slot="header">Taxler</p>
+				A JS library to help with crypto taxes 🗠. Supports importing CSV files from various exchanges and blockchain explorers.
+				<p slot="technologies">Yargs, Semantic release, Coingecko API, NPM</p>
+			</Project>
+
+			<Project demo="https://rndr-stats.com/">
+				<p slot="header">RNDR Stats</p>
+				Dashboard for RNDR token node operators to monitor their machines. 📊
+				<p slot="technologies">Nuxt2, AWS, Netlify, MySql, Ethereum & Polygon Blockchain</p>
+			</Project>
+
+			<Project demo="https://sprit.club/">
+				<p slot="header">Sprit Club</p>
+				Website, Android and iOS app to compare fuel prices ⛽
+				<p slot="technologies">Nuxt2, Google Cloud, Android, Open Street Maps, Nominatim, Java, Kotlin</p>
+			</Project>
+    </div>
+  </body>
+</html>
