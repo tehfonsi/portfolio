@@ -17,8 +17,8 @@ import Project from '../components/Project.astro';
     <meta name='description' content=" Hi, nice to see you! 👋 I studied computer science in Linz and work at Roomle. Below you find a chronological list of all my side projects." />
   </head>
 
-  <body class="p-4">
-    <div class="flex flex-wrap flex-row gap-8 place-content-center">
+  <body class="px-4">
+    <div class="flex flex-wrap flex-row gap-8 place-content-center mb-32 mt-16">
 			<Me />
 
 			<Project demo="https://tehfonsi.com/" source="https://github.com/tehfonsi/portfolio">
@@ -45,10 +45,34 @@ import Project from '../components/Project.astro';
 				<p slot="technologies">Nuxt2, AWS, Netlify, MySql, Ethereum & Polygon Blockchain</p>
 			</Project>
 
+			<Project demo="https://www.mittagsmarken.com/">
+				<p slot="header">Mittagsmarken Android App</p>
+				Digital food stamps for employees which are tax free 🎫. Receipts can be scanned in the app and employees will get cash back at the end of the month.
+				<p slot="technologies">AndroidX, ML Kit</p>
+			</Project>
+
 			<Project demo="https://sprit.club/">
 				<p slot="header">Sprit Club</p>
 				Website, Android and iOS app to compare fuel prices ⛽
 				<p slot="technologies">Nuxt2, Google Cloud, Android, Open Street Maps, Nominatim, Java, Kotlin</p>
+			</Project>
+
+			<Project demo="https://www.mittag.at/">
+				<p slot="header">Mittag Android App</p>
+				Co-founded mittag.at - Overview of all the daily lunch options near your location 📍
+				<p slot="technologies">Android, REST</p>
+			</Project>
+
+			<Project demo="https://hatchapp.net/">
+				<p slot="header">Hatch App</p>
+				An Android app for bird/falcon breeding 🦅 which helps you calculate ideal egg weight loss.
+				<p slot="technologies">Bootstrap, Android, Firebase</p>
+			</Project>
+
+			<Project demo="https://www.eventphant.com/">
+				<p slot="header">Eventphant</p>
+				First big project I started, also founded a GmbH. Location based event search engine 📅
+				<p slot="technologies">Bootstrap, Ionic, Jersey, Geohash, Java</p>
 			</Project>
     </div>
   </body>
