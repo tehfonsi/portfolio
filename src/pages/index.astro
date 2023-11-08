@@ -22,6 +22,12 @@ import Project from '../components/Project.astro';
     <div class="flex flex-wrap flex-row gap-8 place-content-center mb-32 mt-16">
 			<Me />
 
+			<Project demo="https://chargebot.tehfonsi.com/">
+				<p slot="header">Tesla Charge Bot</p>
+				Charges your Tesla based on the hourly rates of Awattar 💚
+				<p slot="technologies">Tesla OAuth, Nuxt3, MongoDB, Docker, Cloudflare</p>
+			</Project>
+
 			<Project demo="https://tehfonsi.com/" source="https://github.com/tehfonsi/portfolio">
 				<p slot="header">Portfolio Website</p>
 				Wanted to create an overview of all the project I've done over the years. Also wanted to build a site with Astro 😅
