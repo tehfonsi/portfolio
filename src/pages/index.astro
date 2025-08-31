@@ -14,13 +14,19 @@ import Project from '../components/Project.astro';
     <link rel='icon' type='icon' href='/favicon.ico' />
     <meta name='generator' content={Astro.generator} />
     <title>Stephan Schober</title>
-    <meta name='description' content=" Hi, nice to see you! 👋 I studied computer science in Linz and work at Roomle. Below you find a chronological list of all my side projects." />
+    <meta name='description' content=" Hi, nice to see you! 👋 I studied computer science in Linz and work at Roomle. Below you find a list of all my projects" />
 		<script async src="https://umami.tehfonsi.com/script.js" data-website-id="d3017db4-4730-4235-87cd-57875789328d"></script>
   </head>
 
   <body class="px-4">
     <div class="flex flex-wrap flex-row gap-8 place-content-center mb-32 mt-16">
 			<Me />
+
+			<Project demo="https://www.glb2png.com/">
+				<p slot="header">GLB2PNG</p>
+				Screenshots of GLBs as a Service 📷
+				<p slot="technologies">Supabase, Nuxt4, Docker, Cloudflare, Puppeteer, Model-Viewer, Google Cloud, Stripe</p>
+			</Project>
 
 			<Project demo="https://chargebot.tehfonsi.com/">
 				<p slot="header">Tesla Charge Bot</p>
